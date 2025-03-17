@@ -752,7 +752,47 @@ function MakeWindow(Configs)
       AnchorPoint = Vector2.new(0, 0.5),
       BackgroundColor3 = Configs_HUB.Cor_Stroke
     })Corner(Frame2, {CornerRadius = UDim.new(1, 0)})
-    
+
+    toggle_Image.Name = "toggle_Image"
+    toggle_Image.Parent = Toggle
+    toggle_Image.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    toggle_Image.BackgroundTransparency = 1.000
+    toggle_Image.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    toggle_Image.BorderSizePixel = 0
+    toggle_Image.Size = UDim2.new(0, 40, 0, 40)
+    toggle_Image.Image = "http://www.roblox.com/asset/?id=12021503727"
+    toggle_Image.ImageColor3 = Color3.fromRGB(255, 0, 0)
+
+    local minimizetog = false
+    MInimize_Button.MouseButton1Click:Connect(function()
+        if minimizetog then
+            utility:Tween(Body, {Size = UDim2.new(0, 600, 0, 350)}, .3)
+            utility:Tween(MInimize_Button, {Rotation = -315}, .3)
+        else
+            utility:Tween(Body, {Size = UDim2.new(0, 600, 0, 32)}, .3)
+            utility:Tween(MInimize_Button, {Rotation = 360}, .3)
+        end
+        minimizetog =  not minimizetog
+    end)
+
+    local togimage = false
+    toggle_Image.MouseEnter:Connect(function()
+        utility:Tween(Toggle, {BackgroundColor3 = Color3.fromRGB(30, 30, 30)}, .15)
+    end)
+
+    toggle_Image.MouseLeave:Connect(function()
+        utility:Tween(Toggle, {BackgroundColor3 = Color3.fromRGB(60, 60, 60)}, .15)
+    end)
+
+    toggle_Image.MouseButton1Click:Connect(function()
+        if togimage then
+            Body.Visible = true
+        else
+            Body.Visible = false
+        end
+        togimage = not togimage;
+    end)
+
     local OnOff = false
     if Default then
       OnOff = true
