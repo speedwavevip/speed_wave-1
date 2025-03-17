@@ -1570,7 +1570,6 @@ function MakeWindow(Configs)
       AutomaticSize = "Y"
     })
 
-    Disc_Logo.Name = "Disc_Logo"
     Disc_Logo.Parent = Discord
     Disc_Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     Disc_Logo.BackgroundTransparency = 1.000
