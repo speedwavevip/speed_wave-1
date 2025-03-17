@@ -1569,7 +1569,17 @@ function MakeWindow(Configs)
       Name = "Frame",
       AutomaticSize = "Y"
     })
-    
+
+    Disc_Logo.Name = "Disc_Logo"
+    Disc_Logo.Parent = Discord
+    Disc_Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    Disc_Logo.BackgroundTransparency = 1.000
+    Disc_Logo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    Disc_Logo.BorderSizePixel = 0
+    Disc_Logo.Position = UDim2.new(0, 5, 0, 1)
+    Disc_Logo.Size = UDim2.new(0, 23, 0, 23)
+    Disc_Logo.Image = "http://www.roblox.com/asset/?id=12058969086"
+
     local LinkLabel = Create("TextLabel", Frame, {
       Size = UDim2.new(1, 0, 0, 25),
       Text = DiscordLink,
