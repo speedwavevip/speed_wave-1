@@ -1,7 +1,7 @@
 local Configs_HUB = {
-  Cor_Hub = Color3.fromRGB(15, 15, 15),
-  Cor_Options = Color3.fromRGB(15, 15, 15),
-  Cor_Stroke = Color3.fromRGB(255, 5, 5),
+  Cor_Hub = Color3.fromRGB(240, 240, 240),
+  Cor_Options = Color3.fromRGB(240, 240, 240),
+  Cor_Stroke = Color3.fromRGB(240, 240, 240),
   Cor_Text = Color3.fromRGB(240, 240, 240),
   Cor_DarkText = Color3.fromRGB(240, 240, 240),
   Corner_Radius = UDim.new(0,4),
@@ -1603,7 +1603,7 @@ function MakeWindow(Configs)
       Size = UDim2.new(1, -24, 0, 25),
       AnchorPoint = Vector2.new(0.5, 1),
       Position = UDim2.new(0.5, 0, 1, -8),
-      Text = "نسخ الرابط",
+      Text = "كس امك",
       Font = Enum.Font.GothamBold,
       TextSize = 15,
       TextColor3 = Color3.fromRGB(220, 220, 220),
@@ -1614,13 +1614,13 @@ function MakeWindow(Configs)
     ClickConter = 0
     JoinButton.MouseButton1Click:Connect(function()
       if ClickConter == 0 or tick() - time > 5 then time = tick() setclipboard(DiscordLink) ClickConter = ClickConter + 1
-        JoinButton.Text = "تم النسخ"
-        JoinButton.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
-        JoinButton.TextColor3 = Color3.fromRGB(150, 150, 150)
+        JoinButton.Text = "عير ب اختك"
+        JoinButton.BackgroundColor3 = Color3.fromRGB(240, 240, 240)
+        JoinButton.TextColor3 = Color3.fromRGB(240, 240, 240)
         task.wait(5)
-        JoinButton.Text = "Join"
-        JoinButton.BackgroundColor3 = Color3.fromRGB(50, 200, 50)
-        JoinButton.TextColor3 = Color3.fromRGB(220, 220, 220)
+        JoinButton.Text = "تفففف"
+        JoinButton.BackgroundColor3 = Color3.fromRGB(240, 240, 240)
+        JoinButton.TextColor3 = Color3.fromRGB(240, 240, 240)
       end
     end)
   end
